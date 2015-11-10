@@ -171,7 +171,7 @@ TVector<ValType> TVector<ValType>::operator+(const TVector<ValType> &v)
 template <class ValType> // вычитание
 TVector<ValType> TVector<ValType>::operator-(const TVector<ValType> &v)
 {
-    if ((Size!=v.Size)||(StartIndex!=v.StartIndex;)) throw "Wrong size";
+    if ((Size!=v.Size)||(StartIndex!=v.StartIndex)) throw "Wrong size";
     TVector sum(Size,StartIndex);
     for(int i=StartIndex; i<Size;i++)
         sum.pVector[i]=pVector[i]+v.pVector[i];
@@ -181,7 +181,7 @@ TVector<ValType> TVector<ValType>::operator-(const TVector<ValType> &v)
 template <class ValType> // скалярное произведение
 ValType TVector<ValType>::operator*(const TVector<ValType> &v)
 {
-    if ((Size!=v.Size)||(StartIndex!=v.StartIndex;)) throw "Wrong size";
+    if ((Size!=v.Size)||(StartIndex!=v.StartIndex)) throw "Wrong size";
     ValType comp=0;
     for(int i=StartIndex; i<Size;i++)
         comp+=pVector[i]*v.pVector[i];
@@ -241,7 +241,7 @@ template <class ValType> // сравнение
 bool TMatrix<ValType>::operator==(const TMatrix<ValType> &mt) const
 {
     bool res=true;
-    if ((Size!=mt.Size)||(StartIndex!=mt.StartIndex;)) res=false;
+    if ((Size!=mt.Size)||(StartIndex!=mt.StartIndex)) res=false;
     else for (int i=StartIndex;i<Size;i++)
         if (pVector[i]!=mt.pVector[i]) {res=false; break;}
         return res;
@@ -251,7 +251,7 @@ template <class ValType> // сравнение
 bool TMatrix<ValType>::operator!=(const TMatrix<ValType> &mt) const
 {
     bool res=false;
-    if ((Size!=mt.Size)||(StartIndex!=mt.StartIndex;)) res=true;
+    if ((Size!=mt.Size)||(StartIndex!=mt.StartIndex)) res=true;
     else for (int i=StartIndex;i<Size;i++)
         if (pVector[i]!=mt.pVector[i]) {res=true; break;}
         return res;

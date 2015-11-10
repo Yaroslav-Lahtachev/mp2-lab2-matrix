@@ -1,0 +1,26 @@
+﻿Build started 10.11.2015 16:15:22.
+     1>Project "C:\Users\ZORG\Documents\GitHub\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\test_utmatrix.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\test_utmatrix.unsuccessfulbuild".
+       ClCompile:
+         D:\Program\vs10\VC\bin\CL.exe /c /I../../gtest /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\test_main.cpp ..\..\test\test_tmatrix.cpp ..\..\test\test_tvector.cpp
+         test_tvector.cpp
+         test_tmatrix.cpp
+         test_main.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\test_utmatrix.exe.embed.manifest.res" Debug\test_utmatrix_manifest.rc 
+       Link:
+         D:\Program\vs10\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ZORG\Documents\GitHub\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.exe" /INCREMENTAL /NOLOGO /LIBPATH:Debug gtest.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test_utmatrix.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\ZORG\Documents\GitHub\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ZORG\Documents\GitHub\mp2-lab2-matrix\sln\vc10\Debug\test_utmatrix.lib" /MACHINE:X86 Debug\test_utmatrix.exe.embed.manifest.res
+         Debug\test_main.obj
+         Debug\test_tmatrix.obj
+         Debug\test_tvector.obj
+         "C:\Users\ZORG\Documents\GitHub\mp2-lab2-matrix\sln\vc10\Debug\gtest.lib"
+     1>LINK : fatal error LNK1104: cannot open file 'gtest.lib'
+     1>Done Building Project "C:\Users\ZORG\Documents\GitHub\mp2-lab2-matrix\sln\vc10\test_utmatrix.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.91
