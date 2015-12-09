@@ -87,10 +87,8 @@ TEST(TVector, can_assign_vector_to_itself)
 {
   TVector<int> v1(4);
   v1[1]=1;
-  TVector<int> v2(v1);
-  v2[1]=1;
   v1 = v1;
-  EXPECT_EQ(v1, v2);
+  EXPECT_EQ(v1, v1);
 }
 
 TEST(TVector, can_assign_vectors_of_equal_size)
